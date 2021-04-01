@@ -1,0 +1,10 @@
+<?php
+session_start();
+$number_vagon=$_SESSION['number_vagon'];
+$number_mesto=filter_var(trim($_POST['number_mesto']),FILTER_SANITIZE_STRING);
+$name=filter_var(trim($_POST['name']),FILTER_SANITIZE_STRING);
+$l_name=filter_var(trim($_POST['last_name']),FILTER_SANITIZE_STRING);
+$m_name=filter_var(trim($_POST['middle_name']),FILTER_SANITIZE_STRING);
+$number_pas=filter_var(trim($_POST['number_pas']),FILTER_SANITIZE_STRING);
+$id_reis=$_SESSION['id'];
+?>
